@@ -6,23 +6,17 @@ function fizzbuzz() {
     console.log('Welcome to FizzBuzz!');
 
     // n = parseInt(prompt("Please enter a number: "));
-    i = 50;
 
     for (let i = 1; i <= 100; i++) {
-        if (i % 3 === 0 && i % 5 === 0) {
-            console.log("Fizzbuzz");
-        } else if (i % 3 === 0) {
-            console.log("Fizz")
-        } else if (i % 5 === 0) {
-            console.log("Buzz");
-        } else {
-            console.log(i);
-        }
-    }
+        let result = '';
+        if (i % 3 === 0) result += 'Fizz';
+        if (i % 5 === 0) result += 'Buzz';
+        if (i % 7 === 0) result += 'Bang';
+        if (i % 11 === 0) result = 'Bong';
+        console.log(result || i);
 
-    console.log(fizzbuzz());
-    break;
+    };
+
 }
-
 // Now we run the main function...
 fizzbuzz();
