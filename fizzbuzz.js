@@ -5,6 +5,9 @@ function fizzbuzz() {
     
     console.log('Welcome to FizzBuzz!');
 
+    // n = parseInt(prompt("Please enter a number: "));
+    i = 50;
+
     for (let i = 1; i <= 100; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
             console.log("Fizzbuzz");
@@ -17,7 +20,8 @@ function fizzbuzz() {
         }
     }
 
-    
+    console.log(fizzbuzz());
+    break;
 }
 
 // Now we run the main function...
